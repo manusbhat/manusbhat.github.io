@@ -51,7 +51,7 @@ a:focus-visible, button:focus-visible { outline: 1px solid var(--accent); outlin
 @media (max-width: 520px) { .col { padding-inline: 18px; } }
 
 /* bar */
-.bar { border-bottom: 1px solid var(--hair); position: sticky; top: env(safe-area-inset-top, 0px); background: var(--bg); }
+.bar { border-bottom: 1px solid var(--hair); position: sticky; top: env(safe-area-inset-top, 0px); z-index: 10; background: var(--bg); }
 .bar .inner {
   max-width: 900px; margin: 0 auto; padding: 0 24px; height: 52px;
   display: flex; align-items: center;
@@ -161,4 +161,3 @@ pre {
   border-radius: 3px; overflow-x: auto;
 }
 pre code { background: none; border: 0; padding: 0; font-size: 13px; line-height: 1.7; color: var(--dim); }
-
